@@ -1,8 +1,8 @@
 <!-- eslint-disable max-len -->
 <template>
   <KPI></KPI>
-  <BContainer class="main-layout mt-5">
-    <h2 class="text-center">VLC Daily View</h2>
+  <BContainer class="main-layout my-5">
+    <h2 class="text-center primary-text">VLC Daily View</h2>
     <BRow>
       <BCol cols="12" md="9">
       </BCol>
@@ -24,6 +24,7 @@
       label="Totals"
     ></BarChart>
   </BContainer>
+  <VFooter></VFooter>
 </template>
 
 <script setup lang="ts">
@@ -33,6 +34,7 @@ import DashboardServices from '@/services/DashboardServices';
 import KPI from '@/components/KPI.vue';
 import ChartData from '../types/ChartData';
 import BarChart from '../components/BarChart.vue';
+import VFooter from '../components/VFooter.vue';
 
 const date = ref('');
 

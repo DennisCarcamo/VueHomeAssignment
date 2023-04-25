@@ -26,7 +26,7 @@ export default {
     return {
       chartData: {
         labels: this.chartLabels,
-        datasets: [{ data: this.chartDatas, label: this.label, backgroundColor: this.color ?? '#0a58cad9' }],
+        datasets: [{ data: this.chartDatas, label: this.label, backgroundColor: this.color ?? '#78c0e0' }],
       },
       chartOptions: {
         responsive: true,

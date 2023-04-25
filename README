@@ -1,0 +1,17 @@
+# Web/Full Stack Home Assignment
+
+First run
+----
+```shell
+npm install
+```
+
+### Compiles and hot-reloads for development
+```shell
+npm run serve
+```
+After a while you should open http://localhost:8081/ to see the dashboard.
+
+To replace API server there are two endpoints with mock data.
+You can test it by opening http://localhost:8081/api/dashboard/widgets or http://localhost:8081/api/dashboard/chart
+They are available only in dev mode.
