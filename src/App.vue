@@ -1,6 +1,6 @@
 <template>
   <BRow class="text-end px-2 my-4">
-    <BCol align-self="center"><h1 class="text-start">
+    <BCol align-self="center text-title"><h1 class="text-start">
       {{ routename }}
     </h1></BCol>
     <BCol align-self="center">
@@ -32,6 +32,10 @@ const routename = computed(():string => {
 </script>
 
 <style lang="scss">
+.text-title{
+  color:#0a58cad9;
+}
+
 nav {
 
   a {
