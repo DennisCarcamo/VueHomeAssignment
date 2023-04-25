@@ -1,7 +1,9 @@
 <template>
-  <BRow class="text-end">
-    <BCol></BCol>
-    <BCol align-self="end">
+  <BRow class="text-end px-2 my-4">
+    <BCol align-self="center"><h1 class="text-start">
+      {{ routename }}
+    </h1></BCol>
+    <BCol align-self="center">
       <nav>
         <router-link to="/">Dashboard</router-link> |
         <router-link to="/about">About</router-link>
@@ -13,12 +15,24 @@
 </template>
 
 <script lang="ts" setup>
+// eslint-disable-next-line import/no-extraneous-dependencies
+import { computed } from 'vue';
 import ExampleView from './components/ExampleView.vue';
+import router from './router';
+
+const routename = computed(():string => {
+  const currentRoute = router.currentRoute.value.name?.toString();
+  let finalName = '';
+  if (currentRoute) {
+    finalName = currentRoute.charAt(0).toUpperCase() + currentRoute.slice(1);
+  }
+  return finalName;
+});
+
 </script>
 
 <style lang="scss">
 nav {
-  padding: 30px;
 
   a {
     font-weight: bold;
