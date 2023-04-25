@@ -13,18 +13,16 @@
       workshop with World Grocer helped define the requirements:
     </p>
   </BContainer>
-  <VFooter></VFooter>
 </template>
 
 <script lang="ts" setup>
-import VFooter from '@/components/VFooter.vue';
 </script>
 
 <style lang="css" scoped>
 .about-container {
   min-width: 100%;
   height: 90%;
-  min-height: 80vh;
+  min-height: 90vh;
   padding: 30px;
 }
 </style>

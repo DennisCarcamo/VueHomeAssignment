@@ -24,7 +24,6 @@
       label="Totals"
     ></BarChart>
   </BContainer>
-  <VFooter></VFooter>
 </template>
 
 <script setup lang="ts">
@@ -34,7 +33,6 @@ import DashboardServices from '@/services/DashboardServices';
 import KPI from '@/components/KPI.vue';
 import ChartData from '../types/ChartData';
 import BarChart from '../components/BarChart.vue';
-import VFooter from '../components/VFooter.vue';
 
 const date = ref('');
 
